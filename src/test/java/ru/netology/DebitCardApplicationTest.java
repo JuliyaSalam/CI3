@@ -13,7 +13,6 @@ class DebitCardApplicationTest {
     @Test
     void shouldSubmitRequest() {
         open("http://localhost:9999/");
-       // SelenideElement form = $("[data-test-id=callback-form]");
         $("[data-test-id=name] input").setValue("Салам Юлия");
         $("[data-test-id=phone] input").setValue("+79600000000");
         $("[data-test-id=agreement]").click();
