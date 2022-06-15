@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.open;
 class DebitCardApplicationTest {
     @Test
     void shouldSubmitRequest() {
-        open("http://localhost:6766/");
+        open("http://localhost:9999/");
         $("[data-test-id=name] input").setValue("Салам Юлия");
         $("[data-test-id=phone] input").setValue("+79600000000");
         $("[data-test-id=agreement]").click();
